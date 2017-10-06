@@ -44,3 +44,9 @@ def geometric(a, ratio, n):
     #Use the sum formula:
     return a*(1-ratio**n)/(1-ratio)
 	
+
+    #Get the geometric sequence
+    sequence = [a*(ratio**x) for x in range(n)]
+    #Calculates its sum
+    return sum(sequence)
+
